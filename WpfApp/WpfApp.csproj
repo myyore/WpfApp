@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+		<SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+	</PropertyGroup>
+	<ItemGroup>
+	  <None Remove="Assets\AppIcon.ico" />
+	  <None Remove="Assets\Data.json" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Content Include="Assets\Data.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </Content>
+	</ItemGroup>
+	<ItemGroup>
+	  <Resource Include="Assets\AppIcon.ico">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Resource>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Assets\PDFs\内对偶片.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\内摩擦片.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\外对偶片.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\外摩擦片.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\摩擦片的油槽形式.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\渐开线圆柱齿轮图样.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\蜗杆图样.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\蜗轮图样.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Assets\PDFs\锥齿轮图样.pdf">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>
